@@ -29,5 +29,74 @@ html{
     font-family: 'DM Sans', sans-serif;
 }
 
+header{
+    position: relative; /*todo es “static” de forma predeterminada, así que para “posicionarlo” debe ser “relative”*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; 
+    min-width: 320px; /*El width no se hará mas chico de 320px*/
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
 
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center; /*Como estamos usando flex esta es la manera de centrar un elemento que tenga un contenedor con flex */
+}
 
+.header--title-container{
+    width: 90%;
+    min-width: 288px; /*El width estará un 90% entre 288 y 900 px. No se hará mas chico despues 288px */
+    max-width: 900px; /*Dejará de crecer cuando llega a los 900px*/
+    height: 218px;
+    margin-top: 40px; /*Se separa del logotipo*/
+    text-align: center;
+    align-self: center; /*centra el contenido con igual espacio entre izquierda y derecha*/
+}
+
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem; /*la dimension de la parte de arriba a abajo la fuente*/
+    color: var(--just-white);
+}
+
+.header--title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header--title-container .header--button{
+    position: absolute; /*Podemos usar top, bottom, left, right para mover el contenedor o elemento en esas posiciones.*/
+    left: calc(50% - 114px); /*posiciona el boton al centro. genera un calculo. se va al centro con el 50%. se toma el 50% del total del width del contenedor 229px*/
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none; /*quita los border predefinidos*/
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header--button span{
+    display: inline-block; /*span por default viene con inline */
+    width: 13px;
+    height: 8px;
+    margin-left: 8px; 
+    background-image: url(./assets/icons/down-arrow.svg);
+}
