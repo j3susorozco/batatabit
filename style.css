@@ -100,3 +100,25 @@ header img{
     margin-left: 8px; 
     background-image: url(./assets/icons/down-arrow.svg);
 }
+
+main{
+    width: 100%;
+    min-width: 320px; /*el contendedor con color de fondo (off-white) no se rompa cuando se alcanzen resoluciones menores a esta.*/
+    height: auto; /*el mismo contenido va a definir la altura del main*/
+    background-color: var(--off-white);
+}
+
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px; /*le damos espacio arriba*/
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container--title{
+    width: 90%;
+    min-width: 288px; /*limita hasta donde se va a hacer tan pequeño*/
+    max-width: 900px; /*no se va a hacer mas grande despues de 900px*/
+    margin: 0 auto; /*se posiciona en el centro siempre*/
+}
