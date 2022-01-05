@@ -264,7 +264,7 @@ main{
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
-    background-color: var(--secondary-blue);
+    background-color: var(--soft-blue);
     border-radius: 8px;
 }
 
@@ -274,4 +274,49 @@ main{
     line-height: 1.5rem;
     font-weight: 300;
     color: var(--warm-black);
+}
+
+.main-product-detail{
+    position: relative; /*delimita el movimiento del absolute*/
+    width: 100%;
+    min-width: 320px;
+    height: auto; /*el contenido mismo marca la altura de la seccion*/
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.product-detail--batata-logo{
+    position: absolute; /*va a buscar el primer elemento o contenedor padre relative para basarse de ahí. No respeta el espacio en el layout*/
+    width: 40px;
+    height: 25px;
+    background-image: url(./assets/icons/batata.svg);
+    top: -10px;
+    left: calc(50% - 20px); /*Left: Alinea un elemento con referencia al lado izquierdo de nuestro contenedor.
+    calc()(función): Nos permite realizar cálculos para determinar valores de propiedades CSS. 50%(parámetro): Representa la mitad del ancho del contenedor(para 320px, el 50% serían = 160px), lo cual alineará nuestro elemento 160px de izquierda(left) a derecha. 20px: Representan la mitad del ancho(width) de nuestro elemento, esto se hace con la finalidad de poder posicionarlo en el centro de nuestro contenedor.*/
+    
+}
+
+.product-detail--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.product-detail--title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.product-detail--title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem; /*alto de la fuente*/
+    color: #808080;
 }
