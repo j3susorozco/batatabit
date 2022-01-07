@@ -317,7 +317,7 @@ main{
     margin-bottom: 20px;
     font-size: 1.4rem;
     font-weight: 500;
-    line-height: 1.8rem; /*alto de la fuente*/
+    line-height: 1.8rem; /*establece la distancia entre lines de texto*/
     color: #808080;
 }
 
@@ -390,4 +390,35 @@ main{
     line-height: 2.6rem;
     color: var(--just-white);
     text-align: center;
+}
+
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px; /*aleja el contenido final con el footer*/
+    text-align: center;
+}
+
+.plans--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto; /*el texto mismo puede delimitar el crecimiento del contenedor*/
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plans--title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans--title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
 }
