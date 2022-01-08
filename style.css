@@ -424,11 +424,12 @@ main{
 }
 .plans-container-basic--card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -508,11 +509,12 @@ main{
 }
 .plans-container-expert-plus--card{
     position: relative;
+    scroll-snap-align: center; /*centra la tarjeta automaticamente al hacer scroll*/
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--black);
     border-radius: 15px;
@@ -577,3 +579,18 @@ main{
     background-image: url(./assets/icons/orange-right-arrow.svg);
     vertical-align: text-bottom;
 }
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll; /*establece lo que se muestra cuando el contenido desborda los bordes izquierdo y derecho de un elemento a nivel de bloque.*/
+    overscroll-behavior-x: contain; /* establece lo que hace un navegador cuando alcanza el límite de un área de desplazamiento*/
+    scroll-snap-type: x proximity; /*establece qué tan estrictamente se aplican los puntos de snap en el contenedor de desplazamiento en caso de que haya uno*/
+
+}
+.plans-container--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+  .plans-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
