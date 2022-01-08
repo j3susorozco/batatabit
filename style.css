@@ -427,7 +427,7 @@ main{
     scroll-snap-align: center;
     width: 70%;
     min-width: 190px;
-    max-width: 300px;
+    max-width: 230px;
     height: 250px;
     margin: 50px 5px 0;
     padding: 0 15px;
@@ -512,7 +512,7 @@ main{
     scroll-snap-align: center; /*centra la tarjeta automaticamente al hacer scroll*/
     width: 70%;
     min-width: 190px;
-    max-width: 300px;
+    max-width: 230px;
     height: 250px;
     margin: 50px 5px 0;
     padding: 0 15px;
@@ -587,13 +587,13 @@ main{
     scroll-snap-type: x proximity; /*establece qué tan estrictamente se aplican los puntos de snap en el contenedor de desplazamiento en caso de que haya uno*/
 
 }
-.plans-container--slider::-webkit-scrollbar {
+ .plans-container--slider::-webkit-scrollbar {
     background-color: var(--soft-orange);
     height: 3px;
   }
   .plans-container--slider::-webkit-scrollbar-thumb {
     background-color: var(--bitcoin-orange);
-  }
+  } 
 
   footer{
       display: flex; /*coloca las secciones una al lado de otra*/
